@@ -15,7 +15,7 @@ module "jmeter-distributed-load-test-infra" {
   aws_ami                      = "ami-0dcc0ebde7b2e00db"
   aws_key_name                 = "jmeter"
   jmeter_version               = "5.4.3"
-  jmeter_workers_count         = 1
+  jmeter_workers_count         = 2
   aws_controller_instance_type = "t2.small"
   aws_worker_instance_type     = "t2.small"
   jmeter_plugins               = ["jpgc-casutg"]
